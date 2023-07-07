@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.SetupAppSettingsScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_25sdp"
+                android:id="@+id/BackMangerLinearLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UseCompoundDrawables">
+                <TextView
+                    android:textStyle="italic"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/_27sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:text="Welocme in App"
+                    android:textColor="@color/MainTextColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_below="@+id/BackMangerLinearLayout"
+                android:layout_width="match_parent"
+                android:columnCount="2"
+
+                android:layout_height="wrap_content">
+                <EditText
+                    android:nextFocusRight="@id/LastName"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:textColor="@color/MainTextColor"
+                    android:hint="@string/first_name"
+                    android:autofillHints="username"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:id="@+id/FirstName"
+                    android:inputType="textPersonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <EditText
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:textColor="@color/MainTextColor"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:hint="@string/last_name"
+                    android:autofillHints="username"
+                    android:id="@+id/LastName"
+                    android:inputType="textPersonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </GridLayout>
+            <
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
